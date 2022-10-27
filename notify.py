@@ -7,7 +7,6 @@ slack_channel_name = config.slack_channel_name
 
 
 def post_to_slack(slack_description):
-    # TODO Exceptionの処理をしたい
     slack_client = WebClient(slack_api_token)
     response = slack_client.chat_postMessage(
         text=slack_description,
